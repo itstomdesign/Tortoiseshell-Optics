@@ -1,0 +1,70 @@
+/* Universal Styles */
+
+html {
+    font-size: 18px;
+    
+}
+
+body {
+    line-height: 1.4px;
+    font-family: Helvetica;
+}
+
+
+/* Header */
+
+header {
+    padding-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+
+}
+
+.header-container {
+    width: 960px;
+    height: 3rem;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.header-logo img {
+    height: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 2rem;
+}
+
+/* Hero Image */
+
+.hero-image-container {
+height: 31rem;
+width: 100%;
+}
+
+.hero-image-container img {
+    object-fit: fill;
+    height: 31rem;
+    width: 100%;
+    object-fit: cover;
+}
