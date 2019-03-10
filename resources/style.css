@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    line-height: 1.4px;
+    line-height: 1.4rem;
     font-family: Helvetica;
     margin: 0;
 }
@@ -94,7 +94,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
 }
 
 .central-images-box {
@@ -122,4 +122,66 @@ header {
 
 .infographics p {
     text-align: center;
+}
+
+/* Business Information */
+
+.business-information-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.business-information {
+    width: 960px;
+    display: flex;
+    justify-content: center;
+}
+
+.business-information .unit {
+    width: 35%;
+    margin-bottom: 5rem;
+}
+
+.business-information .unit.right{
+   margin-left: 5%;
+}
+
+.business-information .unit-header {
+    font-weight: bold;
+    font-size: 1rem;
+    width: 10rem;
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: cadetblue;
+    color: white;
+}
+
+/* Footer Container */
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    width: 960px;
+    background-color: azure;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer-copy {
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+.footer-copy img {
+    height: 1.5rem;
+    margin-right: 1rem;
 }
