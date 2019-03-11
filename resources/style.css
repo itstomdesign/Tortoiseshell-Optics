@@ -58,6 +58,10 @@ header {
     padding: 2rem;
 }
 
+.menu {
+    display: none;
+}
+
 /* Hero Image */
 
 .hero-image-container {
@@ -143,8 +147,8 @@ header {
     margin-bottom: 5rem;
 }
 
-.business-information .unit.right{
-   margin-left: 5%;
+.business-information .unit.right {
+    margin-left: 5%;
 }
 
 .business-information .unit-header {
@@ -190,7 +194,10 @@ footer {
 /* Media Queries */
 
 @media only screen and (max-width: 940px) {
-    
+
+
+    /* Header */
+
 
     .header-container {
         width: 100%;
@@ -202,32 +209,197 @@ footer {
         position: absolute;
     }
 
-.hero-image-container {
-    height: 22rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-image: url(images/glasses-bg.png);
-    background-size: cover;
+    /* Hero Image */
+
+    .hero-image-container {
+        height: 22rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-image: url(images/glasses-bg.png);
+        background-size: cover;
+    }
+
+    .copy-container {
+        width: 960px;
+        display: flex;
+        height: 31rem;
+        justify-content: flex-end;
+    }
+
+
+    .hero-copy {
+        width: fit-content;
+        padding: 1.5rem 4rem;
+        font-weight: bold;
+        font-size: 1.33rem;
+        line-height: 1.2;
+        background-color: white;
+        margin-right: 2rem;
+        margin-top: 8rem;
+    }
+
 }
 
-.copy-container {
-    width: 960px;
-    display: flex;
-    height: 31rem;
-    justify-content: flex-end;
-}
+@media only screen and (max-width: 590px) {
+
+    /* Header */
+
+    .header-container {
+        width: 100%;
+        height: 3rem;
+        margin-top: 0rem;
+        background-color: cadetblue;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+    }
+
+    .menu {
+        display: contents;
+    }
+
+    .header-navigation {
+        margin-right: 2rem;
+    }
+
+    .header-navigation .blank {
+        display: none;
+    }
+
+    /* Hero Image */
+
+    .hero-image-container {
+        height: 22rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-image: url(images/glasses-bg.png);
+        background-size: cover;
+
+    }
+
+    .copy-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
 
 
-.hero-copy {
-    width: fit-content;
-    padding: 1.5rem 4rem;
-    font-weight: bold;
-    font-size: 1.33rem;
-    line-height: 1.2;
-    background-color: white;
-    margin-right: 2rem;
-    margin-top: 8rem;
-}
+    .hero-copy {
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-weight: bold;
+        font-size: 1.33rem;
+        line-height: 1.2;
+        background-color: white;
+        margin-top: 16rem;
+    }
+
+    /* Central Images */
+
+    .central-images-container {
+        width: 100%;
+        height: auto;
+        margin-bottom: rem;
+
+    }
+
+    .central-images-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .infographics {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: auto;
+
+    }
+
+    .infographics img {
+        padding: 0 6rem;
+        margin-bottom: 1rem;
+
+        object-fit: contain;
+
+    }
+
+    /* Business Information */
+
+    .business-information-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .business-information {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .business-information .unit {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .business-information .unit-header {
+        font-weight: bold;
+        font-size: 1rem;
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        background-color: cadetblue;
+        color: white;
+    }
+
+    .business-information .unit.right {
+        margin-left: 0%;
+    }
+
+    /* Footer Container */
+
+    .footer-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        width: 100%;
+        background-color: azure;
+        height: 8rem;
+    }
+
+    .footer-copy {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+    .footer-copy img {
+        width: auto;
+        padding: 0rem;
+        margin: 0rem;
+    }
+
+    .footer-copy span {
+        display: none;
+    }
+
 
 }
